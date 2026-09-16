@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://northstarrecovery.github.io/client-showcase/sitemap.xml
