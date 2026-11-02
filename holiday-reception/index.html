@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sedgwick + NorthStar Holiday Reception</title>
+<meta name="description" content="Sedgwick and NorthStar invite you to a holiday reception at Truluck's Rosemont on Thursday, December 3, 2026, 6:00 to 10:00 p.m. Central.">
+<meta name="robots" content="noindex">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sedgwick + NorthStar Holiday Reception">
+<meta property="og:description" content="Thursday, December 3, 2026 · 6:00 to 10:00 p.m. Central · Truluck's Rosemont">
+<meta property="og:image" content="https://northstarrecovery.github.io/holiday-reception/img/hero.jpg">
+<meta name="theme-color" content="#051528">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one winter night. A strand of co-host lights opens the page; photography carries the warmth, gold engraving carries the menu. */
+:root {
+  --night: #051528;        /* page ground, deeper than NorthStar navy */
+  --night-2: #071D38;      /* a half-step up, for banded sections */
+  --navy: #003A70;         /* NorthStar */
+  --navy-soft: #0B2A4F;    /* raised surfaces */
+  --glow: #00F584;         /* Sedgwick green: light and accent only, never body text */
+  --ivory: #F3EFE6;        /* primary text */
+  --mist: #A9B8CB;         /* secondary text, 8.4:1 on night */
+  --gold: #D8BD86;         /* engraving gold, matches the menu illustrations */
+  --candle: #F6D9A4;       /* warm bulb */
+  --line: rgba(169, 184, 203, 0.2);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --gutter-l: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(20px, env(safe-area-inset-right, 0px));
+  color-scheme: dark;
+  scrollbar-color: #2B4466 var(--night);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--night); color: var(--ivory); font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.6; -webkit-font-smoothing: antialiased; caret-color: var(--glow); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--night); }
+::selection { background: rgba(0, 245, 132, 0.28); color: var(--ivory); }
+a { color: var(--ivory); text-underline-offset: 0.2em; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid var(--glow); outline-offset: 3px; border-radius: 6px; }
+img { display: block; max-width: 100%; }
+.wrap { max-width: 1180px; margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+h1, h2, h3 { font-family: var(--font-display); font-optical-sizing: auto; font-weight: 400; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.tbc { display: inline-block; font-size: 0.8em; font-weight: 600; letter-spacing: 0.04em; color: var(--night); background: var(--candle); padding: 1px 8px; border-radius: 4px; white-space: nowrap; }
+.label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--mist); }
+
+/* Buttons: feedback on press, not on release */
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 24px; border-radius: 999px; font: 600 0.9375rem/1 var(--font-body); letter-spacing: 0.01em; text-decoration: none; cursor: pointer; border: 1px solid transparent; transition: transform 160ms var(--ease-out), box-shadow 240ms var(--ease-out), background-color 160ms ease, border-color 160ms ease; -webkit-tap-highlight-color: transparent; }
+.btn:active { transform: scale(0.97); transition-duration: 80ms; }
+.btn-glow { background: var(--glow); color: #03251A; }
+.btn-glow:hover { box-shadow: 0 6px 28px -6px rgba(0, 245, 132, 0.55); }
+.btn-ghost { background: transparent; color: var(--ivory); border-color: rgba(243, 239, 230, 0.4); }
+.btn-ghost:hover { border-color: var(--ivory); background: rgba(243, 239, 230, 0.06); }
+
+/* Header: a translucent material over the page, with a soft edge instead of a rule */
+.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: rgba(5, 21, 40, 0.72); backdrop-filter: blur(20px) saturate(160%); -webkit-backdrop-filter: blur(20px) saturate(160%); }
+.top::after { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 14px; background: linear-gradient(rgba(5, 21, 40, 0.45), rgba(5, 21, 40, 0)); pointer-events: none; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; }
+.top .btn { min-height: 40px; padding: 0 20px; font-size: 0.875rem; }
+.hosts-mark { display: flex; align-items: center; gap: 14px; min-width: 0; }
+.hosts-mark .lg-sg { height: 21px; width: auto; }
+.hosts-mark .lg-ns { height: 24px; width: auto; }
+.hosts-mark .plus { font-family: var(--font-display); font-size: 1.25rem; color: var(--mist); line-height: 1; }
+
+/* Hero */
+.hero { position: relative; overflow: hidden; isolation: isolate; }
+.hero-photo { position: absolute; inset: 0; z-index: -2; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(5,21,40,0.96) 0%, rgba(5,21,40,0.86) 38%, rgba(5,21,40,0.32) 72%, rgba(5,21,40,0.5) 100%), linear-gradient(0deg, var(--night) 0%, rgba(5,21,40,0) 30%); }
+.strand { display: block; width: 100%; height: 120px; }
+.strand .wire { fill: none; stroke: rgba(169, 184, 203, 0.5); stroke-width: 1.4; }
+.bulb { animation: lightup 900ms var(--ease-out) both; animation-delay: var(--d); }
+@keyframes lightup { from { opacity: 0.1; filter: blur(2px); } to { opacity: 1; filter: blur(0); } }
+.hero-body { padding-block: 24px 104px; display: flex; flex-direction: column; gap: 28px; max-width: 660px; }
+.hero h1 { font-size: clamp(2.75rem, 7.4vw, 5.5rem); line-height: 0.98; letter-spacing: -0.025em; font-weight: 300; }
+.hero h1 em { font-style: italic; color: var(--glow); text-shadow: 0 0 34px rgba(0, 245, 132, 0.35); }
+.lede { font-size: 1.1875rem; color: #DCE2EA; max-width: 34em; }
+.lede strong { font-weight: 600; color: var(--ivory); }
+.facts { display: flex; flex-wrap: wrap; gap: 12px 32px; padding-block: 18px; border-block: 1px solid var(--line); }
+.fact { display: flex; flex-direction: column; gap: 4px; }
+.fact b { font-family: var(--font-display); font-weight: 400; font-size: 1.3125rem; letter-spacing: -0.005em; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Countdown */
+.count { position: relative; isolation: isolate; overflow: hidden; }
+.count-bg { position: absolute; inset: 0; z-index: -1; }
+.count-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.5; }
+.count .wrap { padding-block: 48px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; }
+.count h2 { font-size: clamp(1.625rem, 3.2vw, 2.25rem); font-style: italic; font-weight: 300; letter-spacing: -0.01em; }
+.clock { display: grid; grid-template-columns: repeat(4, minmax(68px, 1fr)); gap: 10px; }
+.unit { background: rgba(5, 21, 40, 0.66); border: 1px solid rgba(169, 184, 203, 0.16); border-radius: 14px; padding: 14px 10px 10px; text-align: center; backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6); }
+.unit b { display: block; font-family: var(--font-mono); font-weight: 500; font-size: clamp(1.75rem, 4vw, 2.5rem); line-height: 1; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
+.unit .label { font-size: 0.6875rem; }
+
+/* Sections */
+.section { padding-block: 112px; }
+.section-head { display: flex; flex-direction: column; gap: 16px; max-width: 660px; margin-bottom: 56px; }
+.section-head h2 { font-size: clamp(2.25rem, 5vw, 3.625rem); line-height: 1.04; font-weight: 300; letter-spacing: -0.02em; }
+.section-head h2 em { color: var(--glow); }
+.section-head p { color: var(--mist); font-size: 1.125rem; max-width: 36em; }
+
+/* The evening: three moments, set on a staggered line */
+.trio { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.panel { display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.panel:nth-child(2) { margin-top: 64px; }
+.panel figure { margin: 0; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 4px; max-width: 100%; background: var(--night); border: 1px solid rgba(216, 189, 134, 0.3); outline: 1px solid rgba(216, 189, 134, 0.14); outline-offset: 5px; }
+.panel figure img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: lighten; transform: scale(1.08); transition: transform 1.4s var(--ease-out); }
+.panel:hover figure img { transform: scale(1.12); }
+.panel h3 { font-size: 1.75rem; letter-spacing: -0.01em; }
+.panel p { color: var(--mist); margin-top: 6px; }
+
+/* Menu: an engraved menu card */
+.menu { background: linear-gradient(180deg, var(--night), var(--night-2) 40%, var(--night)); }
+.menu-card { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 64px; align-items: center; padding: 48px; border: 1px solid rgba(216, 189, 134, 0.35); border-radius: 4px; outline: 1px solid rgba(216, 189, 134, 0.18); outline-offset: 6px; }
+.plates { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
+.plates img { width: 100%; aspect-ratio: 1; object-fit: cover; mix-blend-mode: lighten; transform: scale(1.32); }
+.courses { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.course { padding-block: 18px; border-top: 1px solid rgba(216, 189, 134, 0.22); display: flex; flex-direction: column; gap: 4px; }
+.course:first-child { border-top: 0; padding-top: 0; }
+.course h3 { font-size: 1.5rem; letter-spacing: -0.01em; color: var(--ivory); }
+.course p { color: var(--mist); font-size: 1rem; }
+.note { margin-top: 20px; font-size: 0.875rem; color: var(--mist); font-style: italic; }
+
+/* Venue */
+.venue-grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 56px; align-items: center; }
+.venue-card { display: flex; flex-direction: column; gap: 20px; order: -1; }
+.venue-card h2 { font-size: clamp(2.25rem, 4.4vw, 3rem); font-weight: 300; letter-spacing: -0.02em; line-height: 1.04; }
+.address { font-size: 1.125rem; }
+.rooms { display: flex; flex-wrap: wrap; gap: 8px; }
+.room { font-size: 0.8125rem; letter-spacing: 0.06em; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; }
+.venue-card .body { color: var(--mist); max-width: 34em; }
+.wayfind { position: relative; isolation: isolate; overflow: hidden; border-radius: 22px; padding: 36px 36px 24px; background: var(--navy-soft); min-width: 0; box-shadow: 0 30px 70px -36px rgba(0, 0, 0, 0.9); }
+.wayfind::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("img/lights.jpg") 80% 50% / cover no-repeat; opacity: 0.26; }
+.wayfind h3 { font-size: 1.5rem; margin-bottom: 10px; letter-spacing: -0.01em; }
+.way-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.way-list li { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 16px; padding-block: 15px; border-top: 1px solid var(--line); }
+.way-list .label { color: var(--glow); padding-top: 3px; }
+.copy-status { font-size: 0.875rem; color: var(--glow); min-height: 1.4em; }
+
+/* Details */
+.know { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--line); margin: 0; }
+.know div { padding: 26px 24px 26px 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.know div + div { padding-left: 24px; border-left: 1px solid var(--line); }
+.know dd { margin: 0; font-family: var(--font-display); font-size: 1.375rem; letter-spacing: -0.005em; }
+
+/* RSVP */
+.rsvp { position: relative; isolation: isolate; overflow: hidden; text-align: center; }
+.rsvp-bg { position: absolute; inset: 0; z-index: -1; }
+.rsvp-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.32; }
+.rsvp .wrap { padding-block: 120px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.rsvp h2 { font-size: clamp(2.625rem, 6vw, 4.5rem); font-weight: 300; line-height: 1; letter-spacing: -0.025em; }
+.rsvp h2 em { color: var(--glow); }
+.rsvp .sub { color: #DCE2EA; max-width: 36em; }
+.btn-lg { min-height: 52px; padding: 0 32px; font-size: 1.0625rem; }
+.btn-sm { min-height: 40px; padding: 0 18px; font-size: 0.875rem; }
+.rsvp-main { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.fine { font-size: 0.875rem; color: var(--mist); }
+.qr { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 8px; padding-left: 32px; border-left: 1px solid var(--line); }
+.qr img { width: 148px; height: 148px; border-radius: 12px; }
+.qr figcaption { font-size: 0.8125rem; color: var(--mist); }
+.rsvp-alt { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 14px; color: #DCE2EA; }
+.rsvp-alt .copy-status { flex-basis: 100%; }
+.rsvp-panel { display: flex; flex-direction: row; gap: 32px; align-items: center; padding: 32px 36px; border-radius: 22px; background: rgba(5, 21, 40, 0.62); backdrop-filter: blur(20px) saturate(150%); -webkit-backdrop-filter: blur(20px) saturate(150%); border: 1px solid rgba(169, 184, 203, 0.16); box-shadow: 0 30px 70px -36px rgba(0, 0, 0, 0.9); }
+.rsvp-email { font-family: var(--font-mono); font-weight: 500; font-size: 1.0625rem; user-select: all; }
+
+/* Hosts */
+.hosts { padding-block: 80px 72px; }
+.hosts .wrap { display: flex; flex-direction: column; align-items: center; gap: 24px; text-align: center; }
+.hosts h2 { font-size: 1.375rem; font-style: italic; font-weight: 300; color: var(--mist); }
+.logos { display: grid; grid-template-columns: repeat(2, minmax(0, 300px)); justify-content: center; width: 100%; }
+.logo-slot { height: 120px; display: flex; align-items: center; justify-content: center; padding: 10px 24px; }
+.logo-slot + .logo-slot { border-left: 1px solid var(--line); }
+.logo-slot .lg-sg { height: 46px; width: auto; max-width: 100%; }
+.logo-slot .lg-ns { height: 53px; width: auto; max-width: 100%; }
+.foot { padding-block: 28px; border-top: 1px solid var(--line); font-size: 0.8125rem; color: var(--mist); }
+.foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+
+@media (max-width: 900px) {
+  .trio { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+  .panel, .panel:nth-child(2) { margin-top: 0; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: 20px; align-items: center; }
+  .panel figure { aspect-ratio: 4 / 5; }
+  .menu-card { grid-template-columns: minmax(0, 1fr); gap: 40px; padding: 36px 28px; }
+  .plates { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .venue-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .know { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .know div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .know div:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+@media (max-width: 560px) {
+  body { font-size: 1rem; }
+  .hero::after { background: linear-gradient(180deg, rgba(5,21,40,0.5) 0%, rgba(5,21,40,0.9) 45%, var(--night) 100%); }
+  .hero-body { padding-block: 120px 72px; }
+  .strand { height: 90px; }
+  .section { padding-block: 80px; }
+  .panel, .panel:nth-child(2) { grid-template-columns: minmax(0, 1fr); }
+  .panel figure { aspect-ratio: 4 / 3; }
+  .menu-card { padding: 28px 20px; outline-offset: 4px; }
+  .plates { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .clock { width: 100%; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .wayfind { padding: 28px 22px 18px; }
+  .way-list li { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .know { grid-template-columns: minmax(0, 1fr); }
+  .know div, .know div + div { padding-left: 0; border-left: 0; }
+  .know div + div { border-top: 1px solid var(--line); }
+  .rsvp-panel { padding: 28px 20px; width: 100%; flex-direction: column; gap: 20px; }
+  .qr { display: none; }
+  .logos { grid-template-columns: minmax(0, 1fr); }
+  .logo-slot + .logo-slot { border-left: 0; border-top: 1px solid var(--line); }
+  .hosts-mark { gap: 8px; }
+  .hosts-mark .lg-sg { height: 16px; }
+  .hosts-mark .lg-ns { height: 18px; }
+  .hosts-mark .plus { font-size: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .bulb { animation: lightfade 400ms ease both; animation-delay: 0s; }
+  @keyframes lightfade { from { opacity: 0; } to { opacity: 1; } }
+  .panel figure img, .btn { transition: none; }
+  .panel:hover figure img { transform: none; }
+  .btn:active { transform: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .top { background: var(--night); backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .unit, .rsvp-panel { background: var(--night); backdrop-filter: none; -webkit-backdrop-filter: none; }
+}
+@media (prefers-contrast: more) {
+  :root { --mist: #D3DCE7; --line: rgba(211, 220, 231, 0.6); }
+  .top, .unit, .rsvp-panel { background: var(--night); border: 1px solid var(--ivory); }
+}
+</style>
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="hosts-mark">
+      <img class="lg-sg" src="img/sedgwick-reversed.png" alt="Sedgwick">
+      <span class="plus" aria-hidden="true">+</span>
+      <img class="lg-ns" src="img/northstar-reversed.svg" alt="NorthStar">
+    </div>
+    <a class="btn btn-glow" href="https://forms.cloud.microsoft/r/0LZss64zBf" target="_blank" rel="noopener">RSVP</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-photo"><img src="img/hero.jpg" alt="Candlelit holiday table set with champagne coupes and an evergreen garland"></div>
+    <svg class="strand" id="strand" viewBox="0 0 1200 120" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+      <path class="wire" d="M-20 18 Q290 104 600 22 Q910 104 1220 18"></path>
+    </svg>
+    <div class="wrap">
+      <div class="hero-body">
+        <h1 id="hero-title">You're invited to a <em>holiday reception</em></h1>
+        <p class="lede"><strong>Sedgwick and NorthStar</strong> invite you to an evening of cocktails, dining, and conversation with colleagues from the insurance claims community.</p>
+        <div class="facts">
+          <div class="fact"><span class="label">Date</span><b>Thursday, December 3, 2026</b></div>
+          <div class="fact"><span class="label">Time</span><b>6:00 to 10:00 p.m. Central</b></div>
+          <div class="fact"><span class="label">Venue</span><b>Truluck's Rosemont</b></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-glow" href="https://forms.cloud.microsoft/r/0LZss64zBf" target="_blank" rel="noopener">RSVP</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Truluck%27s+Rosemont+9860+Berwyn+Avenue+Rosemont+IL+60018" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="count" aria-labelledby="count-title">
+    <div class="count-bg"><img src="img/lights.jpg" alt=""></div>
+    <div class="wrap">
+      <h2 id="count-title">Until the doors open in Rosemont</h2>
+      <div class="clock" id="clock" role="timer" aria-live="off">
+        <div class="unit"><b id="cd-d">—</b><span class="label">Days</span></div>
+        <div class="unit"><b id="cd-h">—</b><span class="label">Hours</span></div>
+        <div class="unit"><b id="cd-m">—</b><span class="label">Min</span></div>
+        <div class="unit"><b id="cd-s">—</b><span class="label">Sec</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="evening-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="evening-title">Cocktails, dining, and <em>good company</em></h2>
+        <p>A relaxed reception with low tables for those who want to settle in and open space for those who want to mingle.</p>
+      </div>
+      <div class="trio">
+        <article class="panel">
+          <figure><img src="img/en-bar.jpg" alt="Gold engraving of a cocktail shaker and coupe" loading="lazy"></figure>
+          <div><h3>Cocktails</h3><p>A hosted open bar from the first toast to the last.</p></div>
+        </article>
+        <article class="panel">
+          <figure><img src="img/en-table.jpg" alt="Gold engraving of a place setting with an evergreen sprig and candle" loading="lazy"></figure>
+          <div><h3>Dining</h3><p>A premium seafood display, passed appetizers, and a carving station.</p></div>
+        </article>
+        <article class="panel">
+          <figure><img src="img/en-hands.jpg" alt="Gold engraving of two hands meeting in a handshake" loading="lazy"></figure>
+          <div><h3>Conversation</h3><p>Time with colleagues from across the insurance claims community.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="menu-title">An evening <em>worth lingering</em> over</h2>
+      </div>
+      <div class="menu-card">
+        <div class="plates" aria-hidden="true">
+          <img src="img/il-crab.jpg" alt="" loading="lazy">
+          <img src="img/il-coupe.jpg" alt="" loading="lazy">
+          <img src="img/il-carve.jpg" alt="" loading="lazy">
+          <img src="img/il-coffee.jpg" alt="" loading="lazy">
+        </div>
+        <div>
+          <ul class="courses">
+            <li class="course"><h3>Premium seafood display</h3><p>King crab, shrimp cocktail, and Blue Crab Louie.</p></li>
+            <li class="course"><h3>Passed appetizers</h3><p>A variety of bites served throughout the room.</p></li>
+            <li class="course"><h3>Beef tenderloin carving station</h3><p>Served with accompaniments.</p></li>
+            <li class="course"><h3>Fruit and cheese display</h3><p>For grazing between conversations.</p></li>
+            <li class="course"><h3>Dessert and coffee</h3><p>A sweet finish to the evening.</p></li>
+            <li class="course"><h3>Hosted open bar</h3><p>Cocktails, wine, and more.</p></li>
+          </ul>
+          <p class="note">Menu is subject to final confirmation with the venue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="venue-title">
+    <div class="wrap venue-grid">
+      <div class="venue-card">
+        <h2 id="venue-title">Truluck's Rosemont</h2>
+        <p class="address" id="address">9860 Berwyn Avenue, Rosemont, IL 60018</p>
+        <div class="rooms"><span class="room">Rose Lounge</span><span class="room">Pearl Room</span></div>
+        <p class="body">Our reception spans two private spaces. The Rose Lounge is upstairs, reached by the grand staircase. If you need step-free access, let us know when you RSVP.</p>
+        <div class="cta-row">
+          <a class="btn btn-glow" href="https://www.google.com/maps/search/?api=1&amp;query=Truluck%27s+Rosemont+9860+Berwyn+Avenue+Rosemont+IL+60018" target="_blank" rel="noopener">Open in Maps</a>
+          <button class="btn btn-ghost" type="button" id="copy-address">Copy address</button>
+        </div>
+        <p class="copy-status" id="copy-status" aria-live="polite"></p>
+      </div>
+      <div class="wayfind">
+        <h3>Getting there</h3>
+        <ul class="way-list">
+          <li><span class="label">By car</span><span>Just west of I-294 at the Balmoral exit.</span></li>
+          <li><span class="label">Landmark</span><span>Across from the Donald E. Stephens Convention Center, in Rosemont's Pearl Entertainment District.</span></li>
+          <li><span class="label">From O'Hare</span><span>A short drive from the airport, for guests flying in.</span></li>
+          <li><span class="label">Parking</span><span>Complimentary valet at the main entrance, with the valet tip covered by your hosts. Self-parking is also available nearby.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;" aria-labelledby="know-title">
+    <div class="wrap">
+      <div class="section-head" style="margin-bottom: 28px;">
+        <h2 id="know-title">The details</h2>
+      </div>
+      <dl class="know">
+        <div><dt class="label">Starts</dt><dd>6:00 p.m. Central</dd></div>
+        <div><dt class="label">Ends</dt><dd>10:00 p.m. Central</dd></div>
+        <div><dt class="label">Attire</dt><dd>Festive cheer or business casual</dd></div>
+        <div><dt class="label">Parking</dt><dd>Complimentary valet, tip included</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="rsvp" id="rsvp" aria-labelledby="rsvp-title">
+    <div class="rsvp-bg"><img src="img/lights.jpg" alt=""></div>
+    <div class="wrap">
+      <h2 id="rsvp-title">Save us <em>a seat</em></h2>
+      <p class="sub">Let us know you'll be joining us on Thursday, December 3.</p>
+      <div class="rsvp-panel">
+        <div class="rsvp-main">
+          <p>RSVP by <span class="tbc">DEADLINE TBC</span></p>
+          <a class="btn btn-glow btn-lg" href="https://forms.cloud.microsoft/r/0LZss64zBf" target="_blank" rel="noopener">Reply to the invitation</a>
+          <p class="fine">Takes about a minute. Opens a short Microsoft Form.</p>
+        </div>
+        <figure class="qr">
+          <img src="img/rsvp-qr.svg" alt="QR code that opens the RSVP form" width="148" height="148">
+          <figcaption>Scan with your phone</figcaption>
+        </figure>
+      </div>
+      <div class="rsvp-alt">
+        <p>Questions? Email <span class="rsvp-email" id="rsvp-email">Adelacruz@northstar.com</span></p>
+        <button class="btn btn-ghost btn-sm" type="button" id="copy-email">Copy email</button>
+        <p class="copy-status" id="email-status" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="hosts" aria-labelledby="hosts-title">
+    <div class="wrap">
+      <h2 id="hosts-title">Hosted by</h2>
+      <div class="logos">
+        <div class="logo-slot"><img class="lg-sg" src="img/sedgwick-reversed.png" alt="Sedgwick"></div>
+        <div class="logo-slot"><img class="lg-ns" src="img/northstar-reversed.svg" alt="NorthStar"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Sedgwick + NorthStar Holiday Reception · December 3, 2026</span>
+    <span>Imagery is illustrative and does not depict the venue or menu.</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // String of lights: bulbs placed along the two swags of the wire, lit left to right once.
+  var svg = document.getElementById('strand');
+  var NS = 'http://www.w3.org/2000/svg';
+  function q(p0, p1, p2, t) { var u = 1 - t; return u * u * p0 + 2 * u * t * p1 + t * t * p2; }
+  var swags = [[[-20, 18], [290, 104], [600, 22]], [[600, 22], [910, 104], [1220, 18]]];
+  var n = 0;
+  swags.forEach(function (s) {
+    for (var i = 1; i <= 10; i++) {
+      var t = i / 11;
+      var x = q(s[0][0], s[1][0], s[2][0], t), y = q(s[0][1], s[1][1], s[2][1], t);
+      var green = n % 2 === 0;
+      var g = document.createElementNS(NS, 'g');
+      g.setAttribute('class', 'bulb');
+      g.style.setProperty('--d', (n * 0.07) + 's');
+      var cap = document.createElementNS(NS, 'rect');
+      cap.setAttribute('x', x - 3); cap.setAttribute('y', y - 1); cap.setAttribute('width', 6); cap.setAttribute('height', 6); cap.setAttribute('rx', 1.5);
+      cap.setAttribute('fill', '#2B4466');
+      var halo = document.createElementNS(NS, 'circle');
+      halo.setAttribute('cx', x); halo.setAttribute('cy', y + 13); halo.setAttribute('r', 16);
+      halo.setAttribute('fill', green ? 'rgba(0,245,132,0.16)' : 'rgba(246,217,164,0.16)');
+      var glass = document.createElementNS(NS, 'ellipse');
+      glass.setAttribute('cx', x); glass.setAttribute('cy', y + 12); glass.setAttribute('rx', 5); glass.setAttribute('ry', 8);
+      glass.setAttribute('fill', green ? '#00F584' : '#F6D9A4');
+      g.appendChild(halo); g.appendChild(cap); g.appendChild(glass);
+      svg.appendChild(g);
+      n++;
+    }
+  });
+
+  // Countdown to Thursday, December 3, 2026, 6:00 p.m. Central (CST, UTC-6).
+  var target = Date.UTC(2026, 11, 4, 0, 0, 0);
+  var els = { d: document.getElementById('cd-d'), h: document.getElementById('cd-h'), m: document.getElementById('cd-m'), s: document.getElementById('cd-s') };
+  var title = document.getElementById('count-title');
+  function pad(v) { return v < 10 ? '0' + v : String(v); }
+  function tick() {
+    var diff = target - Date.now();
+    if (diff <= 0) {
+      els.d.textContent = '00'; els.h.textContent = '00'; els.m.textContent = '00'; els.s.textContent = '00';
+      title.textContent = 'Thank you for celebrating with us';
+      return false;
+    }
+    var s = Math.floor(diff / 1000);
+    els.d.textContent = String(Math.floor(s / 86400));
+    els.h.textContent = pad(Math.floor(s % 86400 / 3600));
+    els.m.textContent = pad(Math.floor(s % 3600 / 60));
+    els.s.textContent = pad(s % 60);
+    return true;
+  }
+  if (tick()) { var timer = setInterval(function () { if (!tick()) clearInterval(timer); }, 1000); }
+
+  // Copy helpers: clipboard first, text selection as the fallback.
+  function wireCopy(btnId, textId, statusId, okMsg, selMsg) {
+    var b = document.getElementById(btnId), el = document.getElementById(textId), st = document.getElementById(statusId);
+    b.addEventListener('click', function () {
+      function fallback() { var r = document.createRange(); r.selectNodeContents(el); var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(r); st.textContent = selMsg; }
+      try { navigator.clipboard.writeText(el.textContent).then(function () { st.textContent = okMsg; }, fallback); } catch (e) { fallback(); }
+    });
+  }
+  wireCopy('copy-email', 'rsvp-email', 'email-status', 'Email copied.', 'Email selected. Copy it with your keyboard or menu.');
+  wireCopy('copy-address', 'address', 'copy-status', 'Address copied.', 'Address selected. Copy it with your keyboard or menu.');
+})();
+</script>
+
+</body>
+</html>
