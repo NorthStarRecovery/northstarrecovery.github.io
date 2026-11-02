@@ -153,7 +153,7 @@ p { margin: 0; }
 .know dd { margin: 0; font-family: var(--font-display); font-size: 1.375rem; letter-spacing: -0.005em; }
 
 .cal-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; padding-top: 24px; border-top: 1px solid var(--line); }
-.cal-row .label { margin-right: 6px; }
+.cal-note { font-size: 0.875rem; color: var(--mist); }
 
 /* RSVP */
 .rsvp { position: relative; isolation: isolate; overflow: hidden; text-align: center; }
@@ -377,10 +377,8 @@ p { margin: 0; }
         <div><dt class="label">Parking</dt><dd>Complimentary valet, tip included</dd></div>
       </dl>
       <div class="cal-row">
-        <span class="label">Add to calendar</span>
-        <a class="btn btn-ghost btn-sm" href="https://outlook.office.com/calendar/0/deeplink/compose?subject=Sedgwick%20%2B%20NorthStar%20Holiday%20Reception&amp;startdt=2026-12-04T00%3A00%3A00Z&amp;enddt=2026-12-04T04%3A00%3A00Z&amp;location=Truluck%27s%20Rosemont%2C%209860%20Berwyn%20Avenue%2C%20Rosemont%2C%20IL%2060018&amp;body=Holiday%20reception%20co-hosted%20by%20Sedgwick%20and%20NorthStar.%20Details%3A%20https%3A%2F%2Fnorthstarrecovery.github.io%2Fholiday-reception%2F" target="_blank" rel="noopener">Outlook</a>
-        <a class="btn btn-ghost btn-sm" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Sedgwick%20%2B%20NorthStar%20Holiday%20Reception&amp;dates=20261204T000000Z%2F20261204T040000Z&amp;location=Truluck%27s%20Rosemont%2C%209860%20Berwyn%20Avenue%2C%20Rosemont%2C%20IL%2060018&amp;details=Holiday%20reception%20co-hosted%20by%20Sedgwick%20and%20NorthStar.%20Details%3A%20https%3A%2F%2Fnorthstarrecovery.github.io%2Fholiday-reception%2F" target="_blank" rel="noopener">Google</a>
-        <a class="btn btn-ghost btn-sm" href="holiday-reception.ics">Apple / other (.ics)</a>
+        <a class="btn btn-glow" href="holiday-reception.ics" download="Sedgwick-NorthStar-Holiday-Reception.ics">Add to calendar</a>
+        <span class="cal-note">Downloads a calendar invite that opens in Outlook, Apple Calendar, or Google Calendar.</span>
       </div>
     </div>
   </section>
