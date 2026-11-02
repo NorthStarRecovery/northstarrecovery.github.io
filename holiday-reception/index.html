@@ -11,6 +11,7 @@
 <meta property="og:description" content="Thursday, December 3, 2026 · 6:00 to 10:00 p.m. Central · Truluck's Rosemont">
 <meta property="og:image" content="https://northstarrecovery.github.io/holiday-reception/img/hero.jpg">
 <meta name="theme-color" content="#051528">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}[hidden]{display:none!important}</style>
@@ -150,6 +151,9 @@ p { margin: 0; }
 .know div { padding: 26px 24px 26px 0; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
 .know div + div { padding-left: 24px; border-left: 1px solid var(--line); }
 .know dd { margin: 0; font-family: var(--font-display); font-size: 1.375rem; letter-spacing: -0.005em; }
+
+.cal-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; padding-top: 24px; border-top: 1px solid var(--line); }
+.cal-row .label { margin-right: 6px; }
 
 /* RSVP */
 .rsvp { position: relative; isolation: isolate; overflow: hidden; text-align: center; }
@@ -372,6 +376,12 @@ p { margin: 0; }
         <div><dt class="label">Attire</dt><dd>Festive cheer or business casual</dd></div>
         <div><dt class="label">Parking</dt><dd>Complimentary valet, tip included</dd></div>
       </dl>
+      <div class="cal-row">
+        <span class="label">Add to calendar</span>
+        <a class="btn btn-ghost btn-sm" href="https://outlook.office.com/calendar/0/deeplink/compose?subject=Sedgwick%20%2B%20NorthStar%20Holiday%20Reception&amp;startdt=2026-12-04T00%3A00%3A00Z&amp;enddt=2026-12-04T04%3A00%3A00Z&amp;location=Truluck%27s%20Rosemont%2C%209860%20Berwyn%20Avenue%2C%20Rosemont%2C%20IL%2060018&amp;body=Holiday%20reception%20co-hosted%20by%20Sedgwick%20and%20NorthStar.%20Details%3A%20https%3A%2F%2Fnorthstarrecovery.github.io%2Fholiday-reception%2F" target="_blank" rel="noopener">Outlook</a>
+        <a class="btn btn-ghost btn-sm" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Sedgwick%20%2B%20NorthStar%20Holiday%20Reception&amp;dates=20261204T000000Z%2F20261204T040000Z&amp;location=Truluck%27s%20Rosemont%2C%209860%20Berwyn%20Avenue%2C%20Rosemont%2C%20IL%2060018&amp;details=Holiday%20reception%20co-hosted%20by%20Sedgwick%20and%20NorthStar.%20Details%3A%20https%3A%2F%2Fnorthstarrecovery.github.io%2Fholiday-reception%2F" target="_blank" rel="noopener">Google</a>
+        <a class="btn btn-ghost btn-sm" href="holiday-reception.ics">Apple / other (.ics)</a>
+      </div>
     </div>
   </section>
 
@@ -382,7 +392,6 @@ p { margin: 0; }
       <p class="sub">Let us know you'll be joining us on Thursday, December 3.</p>
       <div class="rsvp-panel">
         <div class="rsvp-main">
-          <p>RSVP by <span class="tbc">DEADLINE TBC</span></p>
           <a class="btn btn-glow btn-lg" href="https://forms.cloud.microsoft/r/0LZss64zBf" target="_blank" rel="noopener">Reply to the invitation</a>
           <p class="fine">Takes about a minute. Opens a short Microsoft Form.</p>
         </div>

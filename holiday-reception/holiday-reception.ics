@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NorthStar//Holiday Reception//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:sedgwick-northstar-holiday-reception-20261203@northstarrecovery.github.io
+DTSTAMP:20261102T200000Z
+DTSTART:20261204T000000Z
+DTEND:20261204T040000Z
+SUMMARY:Sedgwick + NorthStar Holiday Reception
+LOCATION:Truluck's Rosemont\, 9860 Berwyn Avenue\, Rosemont\, IL 60018
+DESCRIPTION:Holiday reception co-hosted by Sedgwick and NorthStar. Details and RSVP: https://northstarrecovery.github.io/holiday-reception/
+URL:https://northstarrecovery.github.io/holiday-reception/
+END:VEVENT
+END:VCALENDAR
